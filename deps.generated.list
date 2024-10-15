@@ -1,0 +1,12 @@
+store.spark-app.wechat-linux-spark
+libelogind0
+libnotify4
+libxss1
+xdg-utils
+bubblewrap
+usrmerge
+libfile-find-rule-perl
+libnumber-compare-perl
+libtext-glob-perl
+deepin-app-store-runtime
+libatomic1
