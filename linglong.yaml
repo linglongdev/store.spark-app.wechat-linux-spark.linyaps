@@ -1,0 +1,65 @@
+version: "1.0"
+package:
+  id: store.spark-app.wechat-linux-spark.linyaps
+  name: 微信Linux
+  version: 2.2.11.0
+  kind: app
+  description: WeChat Desktop WeChat Desktop
+command:
+  - /opt/apps/store.spark-app.wechat-linux-spark.linyaps/files/bin/start.sh
+base: org.deepin.base/23.1.0
+runtime: org.deepin.Runtime/23.0.1
+sources:
+  - kind: file
+    url: https://com-store-packages.uniontech.com/appstorev23/pool/appstore/s/store.spark-app.wechat-linux-spark/store.spark-app.wechat-linux-spark_2.2.1-real1.0.0.241.6_amd64.deb
+    digest: ee122785a1a1d196657ae47f11049a03657e89b57648933943a9638fad1465dc
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/e/elogind/libelogind0_246.9.1-1+debian1_amd64.deb
+    digest: 6148a3218b1431e495b7fd399d860ef5d8bf0a428e3521689515fe1baa238830
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libn/libnotify/libnotify4_0.7.9-3_amd64.deb
+    digest: b0e8d984c0b63b8e1ce6905e3ccb9b0caec0d84a6f4e3a0d6351af9eb6ab85ce
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libx/libxss/libxss1_1.2.3-1_amd64.deb
+    digest: c14df136ee438ad89b2eddff611d9686fb520f76df28ab30646e4941011b8617
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/x/xdg-utils/xdg-utils_1.1.3-4.1deepin1_all.deb
+    digest: d5e090896201fb8fa27fa3d42f2c56de7822c26b8b5f8d9c6c44da690f887c1a
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/b/bubblewrap/bubblewrap_0.10.0-1_amd64.deb
+    digest: e82acc13972c1d2f717ce85ca7a48b6368acad650cb9be60f97ba32bc62ee3b0
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/u/usrmerge/usrmerge_38_all.deb
+    digest: fdc636985788b18a04cd15941a111fb2a73d3b56cf58c689b918345e6f003161
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libf/libfile-find-rule-perl/libfile-find-rule-perl_0.34-1_all.deb
+    digest: 8ebc94473bf3381e34408415da523e390c2fb3be418f3c298deb6bc82373ded5
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libn/libnumber-compare-perl/libnumber-compare-perl_0.03-2_all.deb
+    digest: c37a63d53d982b9596a8e498e9ef95cf07cc245eaa2a8df8fc8546e82511fa7c
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libt/libtext-glob-perl/libtext-glob-perl_0.11-2_all.deb
+    digest: 2e8cf563b486b56b4c875db16a37e5e24168085510b8bfd167efc8367cdcad1f
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/d/deepin-app-store-runtime/deepin-app-store-runtime_1.0.2+community_amd64.deb
+    digest: 72b0e156537437f4628468f53607a50c64aef9dd0984ea8187108b2d5bb2b6aa
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/g/gcc-13/libatomic1_13.2.0-3deepin3_amd64.deb
+    digest: 5d6b54ca73089b87ec0b01a6f029665d20a1a031a30ed21cc052763b67ec0135
+build: >-
+  export LINGLONG_RAW_ID="store.spark-app.wechat-linux-spark"
+
+  export LINGLONG_APP_ID="store.spark-app.wechat-linux-spark.linyaps"
+
+  export LINGLONG_APP_NAME="微信Linux"
+
+  export LINGLONG_APP_VERSION="2.2.11.0"
+
+  export LINGLONG_APP_KIND="app"
+
+  export LINGLONG_APP_DESC="WeChat Desktop WeChat Desktop"
+
+  export
+  LINGLONG_COMMAND="/opt/apps/store.spark-app.wechat-linux-spark.linyaps/files/bin/start.sh"
+
+  exec /project/build.sh
